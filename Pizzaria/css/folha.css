@@ -1,0 +1,124 @@
+/* Organizando todo o site em caixa */
+* {
+	box-sizing: border-box;
+}
+
+/* Ajustes em todo site */
+body {
+	font-family: Arial;
+	padding: 10px;
+	background: #f1f1f1;
+}
+
+/* Ajustes no cabeçalho principal */
+.header {
+	padding: 30px;
+	text-align: center;
+	background: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image:url(../imagens/pizza.jpg);
+	min-height: 90%;
+}
+
+/* Ajustando o tamanho do cabeçalho */
+.header h1 {
+	font-size: 50px;
+}
+
+/* Ajustando a cor e escondendo o conteúdo excedido */
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+
+/* Ajuste nos LINKS do Menu principal */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Mude a cor ou passar o mouse */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Left column */
+.leftcolumn {   
+	float: left;
+	width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding-left: 20px;
+}
+
+.fakeimg {
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+}
+
+/* Criando o efeito cartão */
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+/* Resonvendo problemas de ajustes */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Rodapé */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+
+.titulo-principal {
+	color: white;
+	font-size: 12em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.listas { list-style-type:none; }
+.listas li { font-size: 1.5em; }
+.preco { float:right;color: #fff!important;background-color: #616161!important;padding:5px;border-radius: 4px; }
+
+/* Transformando em um Layout responsivo - telas medias */
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {   
+		width: 100%;
+		padding: 0;
+	}
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* Transformando em um Layout responsivo - telas menores */
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}

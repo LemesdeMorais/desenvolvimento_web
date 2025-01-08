@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante / Pizzaria</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #9b6161;
+    }
+    .topnav {
+      background-color: #bbb5b5;
+      overflow: hidden;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .titulo-principal {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2.5em;
+    }
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 5px rgba(219, 22, 22, 0.1);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .preco {
+      float: right;
+      font-weight: bold;
+      color: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="#">Início</a>
+  <a href="#cardapio">Cardápio</a>
+  <a href="#">Contato</a>
+</nav>
+
+<h1 class="titulo-principal">Pizzaria</h1>
+
+<section id="cardapio">
+  <div class="card">
+    <h2>Pizzas</h2>
+    <ul>
+      <li>Portuguesa - Mussarela, presunto, ovo de codorna, azeitona preta, cebola e pimentão verde. <span class="preco">R$ 29,90</span></li>
+      <li>4 Queijos - Mussarela, requeijão, gorgonzola e parmesão ralado. <span class="preco">R$ 29,90</span></li>
+      <li>Bauru - Mussarela, presunto, requeijão e tomate. <span class="preco">R$ 29,90</span></li>
+      <li>Frango Grelhado - Mussarela, frango, requeijão, tomate, azeitona preta e manjericão. <span class="preco">R$ 29,90</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <h2>Aberto</h2>
+  <p>Seg - Sex das 17 às 23 horas.</p>
+</footer>
+
+</body>
+</html>
